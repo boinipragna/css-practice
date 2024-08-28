@@ -1,17 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>youtube.com clone</title>
     <style>
-        .tn1{
+        .p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .searchbutton {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .tn1,
+        .tn2 {
+            width: 300px;
+            display: inline-block;
+        }
+
+        .title {
+
+            font-family: Roboto, Arial, sans-serif;
+            margin-top: 0px;
+            font-size: 14px;
+            font-weight: 540;
+            line-height: 20px;
+        }
+
+        .channelname {
+            color: #606060;
+            margin-bottom: 4px;
+            margin-top: 8px;
+            font-size: 12px;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        .views {
+            color: #606060;
+            margin-top: 0px;
+            margin-bottom: 16px;
+            font-size: 12px;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        .one {
+            width: 300px;
+            display: inline-block;
+            /* display: flex; flex-wrap: wrap; */
+            vertical-align: top;
+            margin-bottom: 20px;
+
+            /* width: 300px;
+    display: flex; /* Ensure proper alignment */
+    /* flex-direction: column;
+    margin-bottom: 20px;  */
+        }
+
+        .profilepic {
+            display: inline-block;
+            width: 40px;
+            vertical-align: top;
+        }
+
+        .vdoinfo {
+            display: inline-block;
+            width: 200px;
+            /* margin: top 0px; */
+        }
+
+        .dp {
+            width: 100%;
+            border-radius: 1000%;
+
+        }
+
+        .thumbnail {
+            display: inline-block;
+            margin-bottom: 12px;
             width: 300px;
         }
+        /* .video-container{
+            display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+        } */
     </style>
 </head>
+
 <body>
-    <img class="tn1" src="https://www.befunky.com/images/wp/wp-2019-11-BeFunky-YouTube-Thumbnail-Maker-15.jpg?auto=avif,webp&format=jpg&width=1136&crop=16:9" alt="thumbnail">
-    
+    <div class="searchbutton">
+        <input type="text" class="search" placeholder="Search">
+    </div>
+<div class="video-container">
+    <div class="one">
+        <div class="thumbnail">
+            <img class="tn1" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-1.webp"
+                alt="thumbnail">
+        </div>
+        <div class="profilepic">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-1.jpeg"
+                class="dp" alt="profilepic">
+        </div>
+        <div class="vdoinfo">
+            <p class="title">
+                Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="channelname">Marques Brownlee</p>
+            <p class="views">3.4M views · 6 months ago</p>
+        </div>
+    </div>
+
+   <div class="one">
+        <div class="thumbnail">
+            <img class="tn2" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-2.webp"
+                alt="thumbnail">
+        </div>
+        <div class="profilepic">
+            <img src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-1.jpeg"
+                class="dp" alt="profilepic">
+        </div>
+        <div class="vdoinfo">
+            <p class="title">
+                Try Not To Laugh Challenge #9</p>
+            <p class="channelname">Markiplier</p>
+            <p class="views">19M views · 4 years ago</p>
+        </div>
+</div>                                        
+
 </body>
+
 </html>
